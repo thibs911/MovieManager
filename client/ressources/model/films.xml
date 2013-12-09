@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="manuel-test.xsl"?>
+<films>
+	<film score="1.90" nb_votes="63">
+	La folie des grandeurs
+	<realisateur prenom="Gérard" nom="Oury"/>
+		<acteurs>
+			<acteur prenom="Louis" nom="de Funès" role="don Salluste"/>
+			<acteur prenom="Yves" nom="Montand" role="don Cesar"/>
+		</acteurs>
+		<videos>
+			<video no="6" nb_emprunts="25" reserve="o" date_retour="2002-04-25"/>
+			<video no="8" nb_emprunts="12" reserve="n" date_retour="2002-05-01"/>
+		</videos>
+	</film>
+	<film score="3.64" nb_votes="22">
+	La grande vadrouille
+	<realisateur prenom="Gérard" nom="Oury"/>
+		<acteurs>
+			<acteur nom="Bourvil"/>
+			<acteur prenom="Louis" nom="de Funès"/>
+		</acteurs>
+		<videos>
+			<video no="9" nb_emprunts="16" reserve="n"/>
+			<video no="10" nb_emprunts="6" reserve="n" date_retour="2002-05-02"/>
+		</videos>
+	</film>
+	<film score="3.46" nb_votes="13">
+	I comme Icare
+	<realisateur prenom="" nom="Costa-Gavras"/>
+		<acteurs>
+			<acteur prenom="Yves" nom="Montand"/>
+		</acteurs>
+		<videos>
+			<video no="7" nb_emprunts="2" reserve="n" date_retour="2002-04-23"/>
+		</videos>
+	</film>
+	<film score="3.43" nb_votes="35">
+	La Strada
+	<realisateur prenom="Federico" nom="Fellini"/>
+		<acteurs>
+			<acteur prenom="Giuletta" nom="Massina"/>
+			<acteur prenom="Antony" nom="Quinn"/>
+		</acteurs>
+		<videos>
+			<video no="11" nb_emprunts="4" reserve="n"/>
+		</videos>
+	</film>
+	<film score="3.29" nb_votes="7">
+	Ascenseur pour l'échafaud
+	<realisateur prenom="Louis" nom="Malle"/>
+		<acteurs>
+			<acteur prenom="Jeanne" nom="Moreau"/>
+		</acteurs>
+		<videos>
+			<video no="4" nb_emprunts="5" reserve="n" date_retour="2002-05-02"/>
+			<video no="5" nb_emprunts="1" reserve="n" date_retour="2002-05-02"/>
+		</videos>
+	</film>
+	<film>
+	8 femmes
+	<realisateur prenom="François" nom="Ozon"/>
+		<acteurs>
+			<acteur prenom="Catherine" nom="Deneuve"/>
+			<acteur prenom="Fanny" nom="Ardant"/>
+			<acteur prenom="Isabelle" nom="Huppert"/>
+		</acteurs>
+		<videos>
+			<video no="13" nb_emprunts="3" reserve="o" date_retour="2002-04-20"/>
+		</videos>
+	</film>
+	<film>
+	Jules et Jim
+	<realisateur prenom="François" nom="Truffaut"/>
+		<acteurs>
+			<acteur prenom="Jeanne" nom="Moreau"/>
+		</acteurs>
+		<videos>
+			<video no="12" nb_emprunts="5" reserve="n" date_retour="2002-05-04"/>
+		</videos>
+	</film>
+	<film score="4.10" nb_votes="39">
+	Les temps modernes
+	<realisateur prenom="Charles" nom="Chaplin"/>
+		<acteurs>
+			<acteur prenom="Charles" nom="Chaplin" role="Charlot"/>
+		</acteurs>
+		<videos>
+			<video no="1" nb_emprunts="18" reserve="n" date_retour="2002-05-02"/>
+			<video no="2" nb_emprunts="12" reserve="n"/>
+			<video no="3" nb_emprunts="15" reserve="n" date_retour="2002-04-25"/>
+		</videos>
+	</film>
+	<film score="3.56" nb_votes="45">
+	Le dictateur
+	<realisateur prenom="Charles" nom="Chaplin"/>
+		<acteurs>
+			<acteur prenom="Charles" nom="Chaplin"/>
+		</acteurs>
+		<videos></videos>
+	</film>
+	<film score="4.00" nb_votes="40">
+	Droopy and co
+	<realisateur prenom="Tex" nom="Avery"/>
+		<acteurs></acteurs>
+		<videos></videos>
+	</film>
+	<film score="3.89" nb_votes="9">
+	La cité des femmes
+	<realisateur prenom="Federico" nom="Fellini"/>
+		<acteurs></acteurs>
+		<videos></videos>
+	</film>
+</films>
