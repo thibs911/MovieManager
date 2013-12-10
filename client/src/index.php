@@ -5,27 +5,33 @@
 <title>Movie Manager</title>
     <link rel="icon" href="../ressources/images/favicon.ico" />
     <link rel="stylesheet" href="../ressources/css/style.css">
+    <link rel="stylesheet" href="../ressources/js/datatables-1.9.4/media/css/jquery.dataTables.css">
     <script src="../ressources/js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js"></script>
+    <script src="../ressources/js/datatables-1.9.4/media/js/jquery.dataTables.js"></script>
     <!--"localhost/server/"+onglet+".php"-->
 <script>
     function menu(onglet){
         $.ajax({
             type: "GET",
-            url: "../ressources/model/"+onglet+".xml",
+            url: "../ressources/model/"+onglet+"Projet.xml",
             dataType:"xml",
             success: function(xml){
+             var tableau= "<thead><tr><th>Titre</th><th>Genre</th><th>Modification</th></tr></thead><tbody>";
            $(xml).find('film').each(function(){
-               var film=$(this).text();
-               var realisateur=$(this).find('realisateur').attr("nom");
-               var acteurs = [];
-               $(this).find('acteurs').each(function(){
-                   acteurs.push($(this).find('acteur').attr("nom"));
-               })
+               var film=$(this).find("titre").text();
 
-               $("<li></li>").html("Titres : "+film +"<br/><ol> Réalisateur : "+realisateur+"</ol>"
-               +" Acteurs : "+acteurs.toString()+"<br/>").appendTo("#contenu");
+               var genre=$(this).find("id_genre").text();
+               var idRealisateur=$(this).find("id_realisateur").text();
+
+             tableau += "<tr>";
+             tableau += "<td>"+film+"</td><td>"+genre+"</td>";
+
            })
+            tableau += "</tbody>"
+                $("#tableau").html(tableau);
+                $('#tableau').dataTable({
 
+                });
 
 
             }
@@ -35,6 +41,7 @@
     $(document).ready(function() {
 
         menu("films");
+
     });
 
 
@@ -52,7 +59,8 @@
 
 
 <div id="contenu">
-
+    <table id='tableau'>
+        </table>
 </div>
 
 <?php
